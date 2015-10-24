@@ -120,11 +120,14 @@ SWIFT_CLASS("_TtC4Zouk14ViewController")
 @property (nonatomic, weak) IBOutlet UITextField * __null_unspecified nameTextField;
 @property (nonatomic, weak) IBOutlet UITextField * __null_unspecified typeOfEmploymentTextField;
 @property (nonatomic, weak) IBOutlet UITextField * __null_unspecified salaryTextField;
+@property (nonatomic, weak) IBOutlet UITextField * __null_unspecified loanAmountTextField;
+@property (nonatomic, weak) IBOutlet UITextField * __null_unspecified tenureTextField;
 - (void)viewDidLoad;
 - (IBAction)dp:(UITextField * __nonnull)sender;
 - (IBAction)typeOfEmployment:(id __nonnull)sender;
 - (void)handleDatePicker:(UIDatePicker * __nonnull)sender;
 - (IBAction)endEditing:(id __nonnull)sender;
+- (IBAction)applyForLoan:(id __nonnull)sender;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView * __nonnull)pickerView;
 - (NSInteger)pickerView:(UIPickerView * __nonnull)pickerView numberOfRowsInComponent:(NSInteger)component;

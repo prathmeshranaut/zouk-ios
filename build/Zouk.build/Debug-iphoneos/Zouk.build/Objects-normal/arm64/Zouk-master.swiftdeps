@@ -1,6 +1,6 @@
 version: "Apple Swift version 2.0 (swiftlang-700.0.59 clang-700.0.72)"
-options: "ad59b4adf0a7b5e354e0aaa69fe26f00"
-build_time: [499002567, 534228000]
+options: "5706e4c5181386975e77a30ae5a0dbf6"
+build_time: [499002567, 37544000]
 inputs: 
 	"/Users/aayushranaut/Documents/Zouk/Zouk/AppDelegate.swift": [498992306, 0]
 	"/Users/aayushranaut/Documents/Zouk/Zouk/ViewController.swift": [499002440, 0]

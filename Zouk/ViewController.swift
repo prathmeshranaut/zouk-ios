@@ -20,6 +20,8 @@ class ViewController: UIViewController,UIPickerViewDataSource, UIPickerViewDeleg
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var typeOfEmploymentTextField: UITextField!
     @IBOutlet weak var salaryTextField: UITextField!
+    @IBOutlet weak var loanAmountTextField: UITextField!
+    @IBOutlet weak var tenureTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,7 +45,7 @@ class ViewController: UIViewController,UIPickerViewDataSource, UIPickerViewDeleg
     
     func handleDatePicker(sender: UIDatePicker) {
         let dateFormatter = NSDateFormatter()
-        dateFormatter.dateFormat = "dd MMM yyyy"
+        dateFormatter.dateFormat = "dd-MMM-yyyy"
         textfieldjobdate.text = dateFormatter.stringFromDate(sender.date)
     }
 
@@ -52,8 +54,15 @@ class ViewController: UIViewController,UIPickerViewDataSource, UIPickerViewDeleg
         nameTextField.resignFirstResponder()
         typeOfEmploymentTextField.resignFirstResponder()
         salaryTextField.resignFirstResponder()
+        loanAmountTextField.resignFirstResponder()
+        tenureTextField.resignFirstResponder()
         
     }
+    @IBAction func applyForLoan(sender: AnyObject) {
+        //Ping the server with data
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

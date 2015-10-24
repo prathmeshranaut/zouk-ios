@@ -21,7 +21,7 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <animations/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="-0.5" y="-15" width="400" height="600"/>
+                                    <rect key="frame" x="-0.5" y="0.0" width="400" height="600"/>
                                 </variation>
                                 <connections>
                                     <action selector="endEditing:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Jb-2A-ejJ"/>
@@ -57,34 +57,60 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Personal Loan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Wc-SB-p0U">
-                                <rect key="frame" x="279" y="67" width="42" height="21"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tenure (Years)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IbG-vb-eaM">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Loan Amount (INR)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cga-7u-bEx">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kpu-EV-12v">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <animations/>
+                                <items>
+                                    <navigationItem title="Zouk Personal Loan" id="Ycw-uX-wQh">
+                                        <barButtonItem key="rightBarButtonItem" title="Apply" id="RuS-qe-9Tb">
+                                            <connections>
+                                                <action selector="applyForLoan:" destination="BYZ-38-t0r" id="kYw-Ge-nsS"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="w1C-Db-NOR" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="1DD-C9-z8l"/>
-                            <constraint firstItem="feb-fU-Ex4" firstAttribute="top" secondItem="4Wc-SB-p0U" secondAttribute="bottom" constant="35" id="4WI-X2-pfk"/>
                             <constraint firstItem="feb-fU-Ex4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="9S7-Cj-A8y"/>
+                            <constraint firstItem="cga-7u-bEx" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="9m8-he-ztv"/>
+                            <constraint firstItem="Kpu-EV-12v" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="CXA-cN-Cy8"/>
+                            <constraint firstItem="IbG-vb-eaM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="GbW-Uu-dzC"/>
+                            <constraint firstItem="feb-fU-Ex4" firstAttribute="top" secondItem="Kpu-EV-12v" secondAttribute="bottom" constant="51" id="KKq-YI-did"/>
                             <constraint firstItem="qg6-mB-4I0" firstAttribute="top" secondItem="3xm-of-ZVc" secondAttribute="bottom" constant="15" id="KeF-xy-ThE"/>
+                            <constraint firstItem="cga-7u-bEx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="LBc-X0-IFV"/>
                             <constraint firstItem="w1C-Db-NOR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Lmo-nY-Xsb"/>
-                            <constraint firstItem="4Wc-SB-p0U" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="111" id="MzD-3s-Ryo"/>
-                            <constraint firstItem="4Wc-SB-p0U" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="39" id="NRA-GO-FcP"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="4Wc-SB-p0U" secondAttribute="trailing" constant="111" id="RBV-IX-1wg"/>
                             <constraint firstItem="w1C-Db-NOR" firstAttribute="top" secondItem="feb-fU-Ex4" secondAttribute="bottom" constant="15" id="TEL-3v-Flh"/>
+                            <constraint firstItem="Kpu-EV-12v" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="UmM-am-XkG"/>
                             <constraint firstItem="qg6-mB-4I0" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="X0A-TZ-dlK"/>
+                            <constraint firstItem="cga-7u-bEx" firstAttribute="top" secondItem="qg6-mB-4I0" secondAttribute="bottom" constant="15" id="azw-Fl-CoV"/>
                             <constraint firstItem="3xm-of-ZVc" firstAttribute="top" secondItem="w1C-Db-NOR" secondAttribute="bottom" constant="15" id="cvK-Bc-tLO"/>
                             <constraint firstItem="3xm-of-ZVc" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="czk-Cs-vIq"/>
+                            <constraint firstItem="cga-7u-bEx" firstAttribute="top" secondItem="qg6-mB-4I0" secondAttribute="bottom" constant="15" id="em8-CJ-Hpt"/>
+                            <constraint firstItem="IbG-vb-eaM" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="fBr-hc-rO8"/>
                             <constraint firstItem="feb-fU-Ex4" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="hKv-c2-ffG"/>
                             <constraint firstItem="3xm-of-ZVc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="jh1-Ps-LbP"/>
                             <constraint firstItem="w1C-Db-NOR" firstAttribute="top" secondItem="feb-fU-Ex4" secondAttribute="bottom" constant="15" id="ps3-Do-EsE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Kpu-EV-12v" secondAttribute="trailing" constant="-20" id="tkl-L7-g71"/>
                             <constraint firstItem="3xm-of-ZVc" firstAttribute="top" secondItem="w1C-Db-NOR" secondAttribute="bottom" constant="15" id="uO7-VC-DhT"/>
+                            <constraint firstItem="IbG-vb-eaM" firstAttribute="top" secondItem="cga-7u-bEx" secondAttribute="bottom" constant="15" id="vXO-Hu-fdc"/>
                             <constraint firstItem="qg6-mB-4I0" firstAttribute="top" secondItem="3xm-of-ZVc" secondAttribute="bottom" constant="15" id="vnj-Pi-Fak"/>
+                            <constraint firstItem="IbG-vb-eaM" firstAttribute="top" secondItem="cga-7u-bEx" secondAttribute="bottom" constant="15" id="wUe-if-bKS"/>
                             <constraint firstItem="qg6-mB-4I0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="xFK-CG-gyK"/>
                         </constraints>
                         <variation key="default">
@@ -94,14 +120,17 @@
                                 <exclude reference="w1C-Db-NOR"/>
                                 <exclude reference="3xm-of-ZVc"/>
                                 <exclude reference="qg6-mB-4I0"/>
+                                <exclude reference="IbG-vb-eaM"/>
+                                <exclude reference="cga-7u-bEx"/>
+                                <exclude reference="Kpu-EV-12v"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="4WI-X2-pfk"/>
+                                <exclude reference="CXA-cN-Cy8"/>
+                                <exclude reference="UmM-am-XkG"/>
+                                <exclude reference="tkl-L7-g71"/>
                                 <exclude reference="9S7-Cj-A8y"/>
+                                <exclude reference="KKq-YI-did"/>
                                 <exclude reference="hKv-c2-ffG"/>
-                                <exclude reference="MzD-3s-Ryo"/>
-                                <exclude reference="NRA-GO-FcP"/>
-                                <exclude reference="RBV-IX-1wg"/>
                                 <exclude reference="1DD-C9-z8l"/>
                                 <exclude reference="Lmo-nY-Xsb"/>
                                 <exclude reference="TEL-3v-Flh"/>
@@ -114,6 +143,14 @@
                                 <exclude reference="X0A-TZ-dlK"/>
                                 <exclude reference="vnj-Pi-Fak"/>
                                 <exclude reference="xFK-CG-gyK"/>
+                                <exclude reference="9m8-he-ztv"/>
+                                <exclude reference="LBc-X0-IFV"/>
+                                <exclude reference="azw-Fl-CoV"/>
+                                <exclude reference="em8-CJ-Hpt"/>
+                                <exclude reference="GbW-Uu-dzC"/>
+                                <exclude reference="fBr-hc-rO8"/>
+                                <exclude reference="vXO-Hu-fdc"/>
+                                <exclude reference="wUe-if-bKS"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -123,14 +160,17 @@
                                 <include reference="w1C-Db-NOR"/>
                                 <include reference="3xm-of-ZVc"/>
                                 <include reference="qg6-mB-4I0"/>
+                                <include reference="IbG-vb-eaM"/>
+                                <include reference="cga-7u-bEx"/>
+                                <include reference="Kpu-EV-12v"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="4WI-X2-pfk"/>
+                                <include reference="CXA-cN-Cy8"/>
+                                <include reference="UmM-am-XkG"/>
+                                <include reference="tkl-L7-g71"/>
                                 <include reference="9S7-Cj-A8y"/>
+                                <include reference="KKq-YI-did"/>
                                 <include reference="hKv-c2-ffG"/>
-                                <include reference="MzD-3s-Ryo"/>
-                                <include reference="NRA-GO-FcP"/>
-                                <include reference="RBV-IX-1wg"/>
                                 <include reference="1DD-C9-z8l"/>
                                 <include reference="Lmo-nY-Xsb"/>
                                 <include reference="TEL-3v-Flh"/>
@@ -143,19 +183,29 @@
                                 <include reference="X0A-TZ-dlK"/>
                                 <include reference="vnj-Pi-Fak"/>
                                 <include reference="xFK-CG-gyK"/>
+                                <include reference="9m8-he-ztv"/>
+                                <include reference="LBc-X0-IFV"/>
+                                <include reference="azw-Fl-CoV"/>
+                                <include reference="em8-CJ-Hpt"/>
+                                <include reference="GbW-Uu-dzC"/>
+                                <include reference="fBr-hc-rO8"/>
+                                <include reference="vXO-Hu-fdc"/>
+                                <include reference="wUe-if-bKS"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="loanAmountTextField" destination="cga-7u-bEx" id="InR-IG-gPR"/>
                         <outlet property="nameTextField" destination="feb-fU-Ex4" id="fdS-Ls-AYH"/>
                         <outlet property="salaryTextField" destination="qg6-mB-4I0" id="GTD-Mh-8Ic"/>
+                        <outlet property="tenureTextField" destination="IbG-vb-eaM" id="fmn-am-bSy"/>
                         <outlet property="textfieldjobdate" destination="w1C-Db-NOR" id="2de-8k-yF3"/>
                         <outlet property="typeOfEmploymentTextField" destination="3xm-of-ZVc" id="gAV-Au-a3C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="378" y="492"/>
+            <point key="canvasLocation" x="462" y="443"/>
         </scene>
     </scenes>
 </document>
