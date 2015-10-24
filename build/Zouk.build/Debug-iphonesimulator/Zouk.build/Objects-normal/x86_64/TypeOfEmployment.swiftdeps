@@ -1,0 +1,293 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "TypeOfEmployment"
+provides-nominal:
+- "C4Zouk16TypeOfEmployment"
+provides-member:
+- ["C4Zouk16TypeOfEmployment", ""]
+provides-dynamic-lookup:
+- "numberOfComponentsInPickerView"
+- "pickerView"
+depends-top-level:
+- "UIPickerView"
+- "UIPickerViewDataSource"
+- "Array"
+- "Int"
+- "StringLiteralType"
+- "TypeOfEmployment"
+depends-member:
+- ["PSs9AnyObject", "autorelease"]
+- ["PSs9AnyObject", "class"]
+- ["PSs9AnyObject", "conformsToProtocol"]
+- ["PSs9AnyObject", "debugDescription"]
+- ["PSs9AnyObject", "description"]
+- ["PSs9AnyObject", "hash"]
+- ["PSs9AnyObject", "isEqual"]
+- ["PSs9AnyObject", "isKindOfClass"]
+- ["PSs9AnyObject", "isMemberOfClass"]
+- ["PSs9AnyObject", "isProxy"]
+- ["PSs9AnyObject", "numberOfComponentsInPickerView"]
+- ["PSs9AnyObject", "performSelector"]
+- !private ["PSs9AnyObject", "pickerData"]
+- ["PSs9AnyObject", "pickerView"]
+- ["PSs9AnyObject", "release"]
+- ["PSs9AnyObject", "respondsToSelector"]
+- ["PSs9AnyObject", "retain"]
+- ["PSs9AnyObject", "retainCount"]
+- ["PSs9AnyObject", "self"]
+- ["PSs9AnyObject", "superclass"]
+- ["PSs9AnyObject", "zone"]
+- ["PSs9AnyObject", ""]
+- ["Sa", "Element"]
+- !private ["Sa", "Generator"]
+- !private ["Sa", "Index"]
+- !private ["Sa", "SubSequence"]
+- !private ["Sa", "count"]
+- ["PSs23ArrayLiteralConvertible", "Element"]
+- !private ["PSs23ArrayLiteralConvertible", "Generator"]
+- !private ["PSs23ArrayLiteralConvertible", "Index"]
+- !private ["PSs23ArrayLiteralConvertible", "SubSequence"]
+- !private ["PSs23ArrayLiteralConvertible", "count"]
+- !private ["VSs10ArraySlice", "Generator"]
+- !private ["VSs10ArraySlice", "Index"]
+- !private ["PSs22BidirectionalIndexType", "Distance"]
+- !private ["PSs22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["PSs21BitwiseOperationsType", "Distance"]
+- !private ["PSs21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["PSs11CVarArgType", "Distance"]
+- !private ["PSs11CVarArgType", "IntegerLiteralType"]
+- ["PSs14CollectionType", "Element"]
+- !private ["PSs14CollectionType", "Generator"]
+- !private ["PSs14CollectionType", "Index"]
+- !private ["PSs14CollectionType", "SubSequence"]
+- !private ["PSs14CollectionType", "count"]
+- !private ["PSs10Comparable", "Distance"]
+- !private ["PSs10Comparable", "IntegerLiteralType"]
+- ["PSs28CustomDebugStringConvertible", "Element"]
+- !private ["PSs28CustomDebugStringConvertible", "Generator"]
+- !private ["PSs28CustomDebugStringConvertible", "Index"]
+- !private ["PSs28CustomDebugStringConvertible", "SubSequence"]
+- !private ["PSs28CustomDebugStringConvertible", "count"]
+- !private ["PSs23CustomStringConvertible", "Distance"]
+- ["PSs23CustomStringConvertible", "Element"]
+- !private ["PSs23CustomStringConvertible", "Generator"]
+- !private ["PSs23CustomStringConvertible", "Index"]
+- !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["PSs23CustomStringConvertible", "SubSequence"]
+- !private ["PSs23CustomStringConvertible", "count"]
+- !private ["PSs9Equatable", "Distance"]
+- !private ["PSs9Equatable", "IntegerLiteralType"]
+- !private ["PSs16ForwardIndexType", "Distance"]
+- !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
+- !private ["PSs8Hashable", "Distance"]
+- !private ["PSs8Hashable", "IntegerLiteralType"]
+- ["PSs9Indexable", "Element"]
+- !private ["PSs9Indexable", "Generator"]
+- !private ["PSs9Indexable", "Index"]
+- !private ["PSs9Indexable", "SubSequence"]
+- !private ["PSs9Indexable", "count"]
+- !private ["Si", "Distance"]
+- !private ["Si", "IntegerLiteralType"]
+- !private ["PSs21IntegerArithmeticType", "Distance"]
+- !private ["PSs21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs25IntegerLiteralConvertible", "Distance"]
+- !private ["PSs25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs11IntegerType", "Distance"]
+- !private ["PSs11IntegerType", "IntegerLiteralType"]
+- !private ["PSs14MirrorPathType", "Distance"]
+- !private ["PSs14MirrorPathType", "IntegerLiteralType"]
+- ["PSs21MutableCollectionType", "Element"]
+- !private ["PSs21MutableCollectionType", "Generator"]
+- !private ["PSs21MutableCollectionType", "Index"]
+- !private ["PSs21MutableCollectionType", "SubSequence"]
+- !private ["PSs21MutableCollectionType", "count"]
+- ["PSs16MutableIndexable", "Element"]
+- !private ["PSs16MutableIndexable", "Generator"]
+- !private ["PSs16MutableIndexable", "Index"]
+- !private ["PSs16MutableIndexable", "SubSequence"]
+- !private ["PSs16MutableIndexable", "count"]
+- ["PSs16MutableSliceable", "Element"]
+- !private ["PSs16MutableSliceable", "Generator"]
+- !private ["PSs16MutableSliceable", "Index"]
+- !private ["PSs16MutableSliceable", "SubSequence"]
+- !private ["PSs16MutableSliceable", "count"]
+- ["PSo16NSObjectProtocol", "autorelease"]
+- ["PSo16NSObjectProtocol", "class"]
+- ["PSo16NSObjectProtocol", "conformsToProtocol"]
+- ["PSo16NSObjectProtocol", "debugDescription"]
+- ["PSo16NSObjectProtocol", "description"]
+- ["PSo16NSObjectProtocol", "hash"]
+- ["PSo16NSObjectProtocol", "isEqual"]
+- ["PSo16NSObjectProtocol", "isKindOfClass"]
+- ["PSo16NSObjectProtocol", "isMemberOfClass"]
+- ["PSo16NSObjectProtocol", "isProxy"]
+- ["PSo16NSObjectProtocol", "numberOfComponentsInPickerView"]
+- ["PSo16NSObjectProtocol", "performSelector"]
+- !private ["PSo16NSObjectProtocol", "pickerData"]
+- ["PSo16NSObjectProtocol", "pickerView"]
+- ["PSo16NSObjectProtocol", "release"]
+- ["PSo16NSObjectProtocol", "respondsToSelector"]
+- ["PSo16NSObjectProtocol", "retain"]
+- ["PSo16NSObjectProtocol", "retainCount"]
+- ["PSo16NSObjectProtocol", "self"]
+- ["PSo16NSObjectProtocol", "superclass"]
+- ["PSo16NSObjectProtocol", "zone"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSs21RandomAccessIndexType", "Distance"]
+- !private ["PSs21RandomAccessIndexType", "IntegerLiteralType"]
+- ["PSs30RangeReplaceableCollectionType", "Element"]
+- !private ["PSs30RangeReplaceableCollectionType", "Generator"]
+- !private ["PSs30RangeReplaceableCollectionType", "Index"]
+- !private ["PSs30RangeReplaceableCollectionType", "SubSequence"]
+- !private ["PSs30RangeReplaceableCollectionType", "count"]
+- ["PSs12SequenceType", "Element"]
+- !private ["PSs12SequenceType", "Generator"]
+- !private ["PSs12SequenceType", "Index"]
+- !private ["PSs12SequenceType", "SubSequence"]
+- !private ["PSs12SequenceType", "count"]
+- !private ["PSs17SignedIntegerType", "Distance"]
+- !private ["PSs17SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs16SignedNumberType", "Distance"]
+- !private ["PSs16SignedNumberType", "IntegerLiteralType"]
+- !private ["PSs10Strideable", "Distance"]
+- !private ["PSs10Strideable", "IntegerLiteralType"]
+- ["C4Zouk16TypeOfEmployment", "Int"]
+- ["C4Zouk16TypeOfEmployment", "UIPickerView"]
+- ["C4Zouk16TypeOfEmployment", "autorelease"]
+- ["C4Zouk16TypeOfEmployment", "class"]
+- ["C4Zouk16TypeOfEmployment", "conformsToProtocol"]
+- ["C4Zouk16TypeOfEmployment", "debugDescription"]
+- ["C4Zouk16TypeOfEmployment", "deinit"]
+- ["C4Zouk16TypeOfEmployment", "description"]
+- ["C4Zouk16TypeOfEmployment", "hash"]
+- ["C4Zouk16TypeOfEmployment", "init"]
+- ["C4Zouk16TypeOfEmployment", "isEqual"]
+- ["C4Zouk16TypeOfEmployment", "isKindOfClass"]
+- ["C4Zouk16TypeOfEmployment", "isMemberOfClass"]
+- ["C4Zouk16TypeOfEmployment", "isProxy"]
+- ["C4Zouk16TypeOfEmployment", "numberOfComponentsInPickerView"]
+- ["C4Zouk16TypeOfEmployment", "performSelector"]
+- ["C4Zouk16TypeOfEmployment", "pickerData"]
+- ["C4Zouk16TypeOfEmployment", "pickerView"]
+- ["C4Zouk16TypeOfEmployment", "release"]
+- ["C4Zouk16TypeOfEmployment", "respondsToSelector"]
+- ["C4Zouk16TypeOfEmployment", "retain"]
+- ["C4Zouk16TypeOfEmployment", "retainCount"]
+- ["C4Zouk16TypeOfEmployment", "self"]
+- ["C4Zouk16TypeOfEmployment", "superclass"]
+- ["C4Zouk16TypeOfEmployment", "zone"]
+- ["PSo22UIPickerViewDataSource", "autorelease"]
+- ["PSo22UIPickerViewDataSource", "class"]
+- ["PSo22UIPickerViewDataSource", "conformsToProtocol"]
+- ["PSo22UIPickerViewDataSource", "debugDescription"]
+- ["PSo22UIPickerViewDataSource", "description"]
+- ["PSo22UIPickerViewDataSource", "hash"]
+- ["PSo22UIPickerViewDataSource", "isEqual"]
+- ["PSo22UIPickerViewDataSource", "isKindOfClass"]
+- ["PSo22UIPickerViewDataSource", "isMemberOfClass"]
+- ["PSo22UIPickerViewDataSource", "isProxy"]
+- ["PSo22UIPickerViewDataSource", "numberOfComponentsInPickerView"]
+- ["PSo22UIPickerViewDataSource", "performSelector"]
+- !private ["PSo22UIPickerViewDataSource", "pickerData"]
+- ["PSo22UIPickerViewDataSource", "pickerView"]
+- ["PSo22UIPickerViewDataSource", "release"]
+- ["PSo22UIPickerViewDataSource", "respondsToSelector"]
+- ["PSo22UIPickerViewDataSource", "retain"]
+- ["PSo22UIPickerViewDataSource", "retainCount"]
+- ["PSo22UIPickerViewDataSource", "self"]
+- ["PSo22UIPickerViewDataSource", "superclass"]
+- ["PSo22UIPickerViewDataSource", "zone"]
+- ["PSo22UIPickerViewDataSource", ""]
+- ["PSs10_ArrayType", "Element"]
+- !private ["PSs10_ArrayType", "Generator"]
+- !private ["PSs10_ArrayType", "Index"]
+- !private ["PSs10_ArrayType", "SubSequence"]
+- !private ["PSs10_ArrayType", "count"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "Distance"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- ["PSs24_DestructorSafeContainer", "Element"]
+- !private ["PSs24_DestructorSafeContainer", "Generator"]
+- !private ["PSs24_DestructorSafeContainer", "Index"]
+- !private ["PSs24_DestructorSafeContainer", "SubSequence"]
+- !private ["PSs24_DestructorSafeContainer", "count"]
+- !private ["PSs14_Incrementable", "Distance"]
+- !private ["PSs14_Incrementable", "IntegerLiteralType"]
+- !private ["PSs22_IntegerArithmeticType", "Distance"]
+- !private ["PSs22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs12_IntegerType", "Distance"]
+- !private ["PSs12_IntegerType", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "Distance"]
+- ["PSs21_ObjectiveCBridgeable", "Element"]
+- !private ["PSs21_ObjectiveCBridgeable", "Generator"]
+- !private ["PSs21_ObjectiveCBridgeable", "Index"]
+- !private ["PSs21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["PSs21_ObjectiveCBridgeable", "count"]
+- !private ["PSs22_RandomAccessAmbiguity", "Distance"]
+- !private ["PSs22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["PSs12_Reflectable", "Distance"]
+- ["PSs12_Reflectable", "Element"]
+- !private ["PSs12_Reflectable", "Generator"]
+- !private ["PSs12_Reflectable", "Index"]
+- !private ["PSs12_Reflectable", "IntegerLiteralType"]
+- !private ["PSs12_Reflectable", "SubSequence"]
+- !private ["PSs12_Reflectable", "count"]
+- !private ["PSs18_SignedIntegerType", "Distance"]
+- !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs11_Strideable", "Distance"]
+- !private ["PSs11_Strideable", "IntegerLiteralType"]
+depends-nominal:
+- "PSs9AnyObject"
+- "Sa"
+- "PSs23ArrayLiteralConvertible"
+- !private "VSs10ArraySlice"
+- !private "PSs22BidirectionalIndexType"
+- !private "PSs21BitwiseOperationsType"
+- !private "PSs11CVarArgType"
+- "PSs14CollectionType"
+- !private "PSs10Comparable"
+- "PSs28CustomDebugStringConvertible"
+- "PSs23CustomStringConvertible"
+- !private "PSs9Equatable"
+- !private "PSs16ForwardIndexType"
+- !private "PSs8Hashable"
+- "PSs9Indexable"
+- !private "Si"
+- !private "PSs21IntegerArithmeticType"
+- !private "PSs25IntegerLiteralConvertible"
+- !private "PSs11IntegerType"
+- !private "PSs14MirrorPathType"
+- "PSs21MutableCollectionType"
+- "PSs16MutableIndexable"
+- "PSs16MutableSliceable"
+- "PSo16NSObjectProtocol"
+- !private "PSs21RandomAccessIndexType"
+- "PSs30RangeReplaceableCollectionType"
+- "PSs12SequenceType"
+- !private "PSs17SignedIntegerType"
+- !private "PSs16SignedNumberType"
+- !private "PSs10Strideable"
+- "C4Zouk16TypeOfEmployment"
+- "PSo22UIPickerViewDataSource"
+- "PSs10_ArrayType"
+- !private "PSs33_BuiltinIntegerLiteralConvertible"
+- "PSs24_DestructorSafeContainer"
+- !private "PSs14_Incrementable"
+- !private "PSs22_IntegerArithmeticType"
+- !private "PSs12_IntegerType"
+- "PSs21_ObjectiveCBridgeable"
+- !private "PSs22_RandomAccessAmbiguity"
+- "PSs12_Reflectable"
+- !private "PSs18_SignedIntegerType"
+- !private "PSs11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+interface-hash: "2238c523ce3eb996654cf44466365a0c"

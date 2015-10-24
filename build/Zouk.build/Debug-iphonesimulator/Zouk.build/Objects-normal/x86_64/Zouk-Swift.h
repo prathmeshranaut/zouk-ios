@@ -109,18 +109,25 @@ SWIFT_CLASS("_TtC4Zouk11AppDelegate")
 
 @class UITextField;
 @class UIDatePicker;
+@class UIPickerView;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC4Zouk14ViewController")
-@interface ViewController : UIViewController
-@property (nonatomic, weak) IBOutlet UIDatePicker * __null_unspecified dobPicker;
+@interface ViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
+@property (nonatomic, readonly, copy) NSArray<NSString *> * __nonnull pickerData;
 @property (nonatomic, weak) IBOutlet UITextField * __null_unspecified textfieldjobdate;
+@property (nonatomic, weak) IBOutlet UITextField * __null_unspecified typeOfEmploymentTextField;
 - (void)viewDidLoad;
 - (IBAction)dp:(UITextField * __nonnull)sender;
+- (IBAction)typeOfEmployment:(UITextField * __nonnull)sender;
 - (void)handleDatePicker:(UIDatePicker * __nonnull)sender;
 - (IBAction)endEditing:(id __nonnull)sender;
 - (void)didReceiveMemoryWarning;
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView * __nonnull)pickerView;
+- (NSInteger)pickerView:(UIPickerView * __nonnull)pickerView numberOfRowsInComponent:(NSInteger)component;
+- (NSString * __nullable)pickerView:(UIPickerView * __nonnull)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component;
+- (void)pickerView:(UIPickerView * __nonnull)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -20,39 +21,23 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <animations/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="-0.5" y="0.0" width="400" height="600"/>
+                                    <rect key="frame" x="-0.5" y="-15" width="400" height="600"/>
                                 </variation>
                                 <connections>
                                     <action selector="endEditing:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Jb-2A-ejJ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Personal Loan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Wc-SB-p0U">
-                                <rect key="frame" x="279" y="67" width="42" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="146" y="59" width="108" height="21"/>
-                                </variation>
-                            </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="feb-fU-Ex4">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="130" width="360" height="30"/>
-                                </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date Of Birth" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w1C-Db-NOR">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="175" width="360" height="30"/>
-                                </variation>
                                 <connections>
                                     <action selector="dp:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="knh-fZ-7Ie"/>
                                 </connections>
@@ -62,22 +47,46 @@
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="220" width="360" height="30"/>
-                                </variation>
+                                <connections>
+                                    <action selector="typeOfEmployment:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="p4D-a5-cgU"/>
+                                </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date Of Birth" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qg6-mB-4I0">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Salary (INR)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qg6-mB-4I0">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="265" width="360" height="30"/>
-                                </variation>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Personal Loan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Wc-SB-p0U">
+                                <rect key="frame" x="279" y="67" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="w1C-Db-NOR" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="1DD-C9-z8l"/>
+                            <constraint firstItem="feb-fU-Ex4" firstAttribute="top" secondItem="4Wc-SB-p0U" secondAttribute="bottom" constant="35" id="4WI-X2-pfk"/>
+                            <constraint firstItem="feb-fU-Ex4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="9S7-Cj-A8y"/>
+                            <constraint firstItem="qg6-mB-4I0" firstAttribute="top" secondItem="3xm-of-ZVc" secondAttribute="bottom" constant="15" id="KeF-xy-ThE"/>
+                            <constraint firstItem="w1C-Db-NOR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Lmo-nY-Xsb"/>
+                            <constraint firstItem="4Wc-SB-p0U" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="111" id="MzD-3s-Ryo"/>
+                            <constraint firstItem="4Wc-SB-p0U" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="39" id="NRA-GO-FcP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4Wc-SB-p0U" secondAttribute="trailing" constant="111" id="RBV-IX-1wg"/>
+                            <constraint firstItem="w1C-Db-NOR" firstAttribute="top" secondItem="feb-fU-Ex4" secondAttribute="bottom" constant="15" id="TEL-3v-Flh"/>
+                            <constraint firstItem="qg6-mB-4I0" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="X0A-TZ-dlK"/>
+                            <constraint firstItem="3xm-of-ZVc" firstAttribute="top" secondItem="w1C-Db-NOR" secondAttribute="bottom" constant="15" id="cvK-Bc-tLO"/>
+                            <constraint firstItem="3xm-of-ZVc" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="czk-Cs-vIq"/>
+                            <constraint firstItem="feb-fU-Ex4" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="hKv-c2-ffG"/>
+                            <constraint firstItem="3xm-of-ZVc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="jh1-Ps-LbP"/>
+                            <constraint firstItem="w1C-Db-NOR" firstAttribute="top" secondItem="feb-fU-Ex4" secondAttribute="bottom" constant="15" id="ps3-Do-EsE"/>
+                            <constraint firstItem="3xm-of-ZVc" firstAttribute="top" secondItem="w1C-Db-NOR" secondAttribute="bottom" constant="15" id="uO7-VC-DhT"/>
+                            <constraint firstItem="qg6-mB-4I0" firstAttribute="top" secondItem="3xm-of-ZVc" secondAttribute="bottom" constant="15" id="vnj-Pi-Fak"/>
+                            <constraint firstItem="qg6-mB-4I0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="xFK-CG-gyK"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="My3-LW-MiY"/>
@@ -85,6 +94,26 @@
                                 <exclude reference="w1C-Db-NOR"/>
                                 <exclude reference="3xm-of-ZVc"/>
                                 <exclude reference="qg6-mB-4I0"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="4WI-X2-pfk"/>
+                                <exclude reference="9S7-Cj-A8y"/>
+                                <exclude reference="hKv-c2-ffG"/>
+                                <exclude reference="MzD-3s-Ryo"/>
+                                <exclude reference="NRA-GO-FcP"/>
+                                <exclude reference="RBV-IX-1wg"/>
+                                <exclude reference="1DD-C9-z8l"/>
+                                <exclude reference="Lmo-nY-Xsb"/>
+                                <exclude reference="TEL-3v-Flh"/>
+                                <exclude reference="ps3-Do-EsE"/>
+                                <exclude reference="cvK-Bc-tLO"/>
+                                <exclude reference="czk-Cs-vIq"/>
+                                <exclude reference="jh1-Ps-LbP"/>
+                                <exclude reference="uO7-VC-DhT"/>
+                                <exclude reference="KeF-xy-ThE"/>
+                                <exclude reference="X0A-TZ-dlK"/>
+                                <exclude reference="vnj-Pi-Fak"/>
+                                <exclude reference="xFK-CG-gyK"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -95,10 +124,33 @@
                                 <include reference="3xm-of-ZVc"/>
                                 <include reference="qg6-mB-4I0"/>
                             </mask>
+                            <mask key="constraints">
+                                <include reference="4WI-X2-pfk"/>
+                                <include reference="9S7-Cj-A8y"/>
+                                <include reference="hKv-c2-ffG"/>
+                                <include reference="MzD-3s-Ryo"/>
+                                <include reference="NRA-GO-FcP"/>
+                                <include reference="RBV-IX-1wg"/>
+                                <include reference="1DD-C9-z8l"/>
+                                <include reference="Lmo-nY-Xsb"/>
+                                <include reference="TEL-3v-Flh"/>
+                                <include reference="ps3-Do-EsE"/>
+                                <include reference="cvK-Bc-tLO"/>
+                                <include reference="czk-Cs-vIq"/>
+                                <include reference="jh1-Ps-LbP"/>
+                                <include reference="uO7-VC-DhT"/>
+                                <include reference="KeF-xy-ThE"/>
+                                <include reference="X0A-TZ-dlK"/>
+                                <include reference="vnj-Pi-Fak"/>
+                                <include reference="xFK-CG-gyK"/>
+                            </mask>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="nameTextField" destination="feb-fU-Ex4" id="fdS-Ls-AYH"/>
+                        <outlet property="salaryTextField" destination="qg6-mB-4I0" id="GTD-Mh-8Ic"/>
                         <outlet property="textfieldjobdate" destination="w1C-Db-NOR" id="2de-8k-yF3"/>
+                        <outlet property="typeOfEmploymentTextField" destination="3xm-of-ZVc" id="gAV-Au-a3C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
