@@ -107,12 +107,19 @@ SWIFT_CLASS("_TtC4Zouk11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UITextField;
+@class UIDatePicker;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC4Zouk14ViewController")
 @interface ViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UIDatePicker * __null_unspecified dobPicker;
+@property (nonatomic, weak) IBOutlet UITextField * __null_unspecified textfieldjobdate;
 - (void)viewDidLoad;
+- (IBAction)dp:(UITextField * __nonnull)sender;
+- (void)handleDatePicker:(UIDatePicker * __nonnull)sender;
+- (IBAction)endEditing:(id __nonnull)sender;
 - (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
